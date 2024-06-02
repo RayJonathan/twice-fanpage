@@ -1,0 +1,162 @@
+.container .content {
+  flex: 10;
+  overflow-x: scroll;
+  overflow-y: scroll;
+}
+
+/*Ray Jo*/
+
+.history-title {
+  background-color: beige;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+  border: 1px solid black;
+}
+
+.history-title li {
+  list-style-type: none;
+  height: 30px;
+}
+
+.history-title li a {
+  text-decoration: none;
+  color: black;
+  font-size: large;
+}
+
+.history-title li a:hover {
+  background-color: rgb(255, 250, 180);
+}
+
+.history-title .active {
+  background-color: rgb(255, 227, 175);
+}
+
+.dropdown-content {
+  display: none;
+}
+
+.dropdown-content.active {
+  display: block;
+}
+
+.history-about {
+  background-color: beige;
+  padding: 20px;
+}
+
+.logoAndInfo {
+  background-color: #f1f1f1;
+  margin: 0px;
+}
+
+.logo {
+  border: 1px solid;
+}
+
+.info {
+  border: 1px solid;
+}
+
+.info.header {
+  text-align: center;
+  background-color: beige;
+}
+
+.membersTwiceRight {
+  padding-left: 64px;
+}
+
+.facebook a {
+  background: url("../image/social.jpg")-0px -3px;
+}
+
+.twitter a {
+  background: url("../image/social.jpg")-64px -3px;
+}
+
+.youtube a {
+  background: url("../image/social.jpg")-510px -3px;
+}
+
+.facebook a:hover {
+  background: url("../image/social.jpg")-0px -66px;
+}
+
+.twitter a:hover {
+  background: url("../image/social.jpg")-64px -66px;
+}
+
+.youtube a:hover {
+  background: url("../image/social.jpg")-510px -66px;
+}
+
+.menu {
+  text-align: center;
+}
+
+ul.menu li a {
+  height: 50px;
+  line-height: 50px;
+  width: 75px;
+  background-color: green;
+  display: inline-block;
+  margin: 20px;
+}
+
+ul.menu li {
+  display: inline-block;
+}
+
+@media screen and (max-width: 688px) {
+  .body-cards .box {
+    width: 69%;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header .link-category {
+    margin-top: 20px;
+  }
+  /* 
+  .container .nav > li {
+    padding: 10px;
+    margin: 25px 0;
+  } */
+
+  .container .nav li img {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .body-cards .box {
+    width: 90%;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .container .nav {
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+
+  .container .nav li a {
+    border-radius: 15%;
+  }
+
+  .container .nav li img {
+    width: 35px;
+    height: 35px;
+  }
+}

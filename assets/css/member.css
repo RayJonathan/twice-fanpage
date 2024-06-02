@@ -1,0 +1,134 @@
+.container .card-nav {
+  flex: 1;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.container .card-nav > img {
+  margin: 15px;
+  transition: all 0.5s;
+}
+
+.container .card-nav .member {
+  border-radius: 10px;
+}
+
+.container .card-nav .down {
+  transform: rotate(180deg);
+}
+
+.container .card-nav img.small {
+  width: 30%;
+}
+
+.container .card-nav img {
+  width: 50%;
+}
+
+.container .card-nav img.pointer {
+  cursor: pointer;
+}
+
+.container .image {
+  flex: 3;
+  display: flex;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.container .fact {
+  flex: 5;
+  overflow: scroll;
+  padding: 20px;
+}
+
+.fact h1 {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 680px) and (max-width: 1115px) {
+  .banner {
+    position: absolute;
+    width: 22%;
+    transform: rotate(20deg);
+    left: -1%;
+    bottom: 4%;
+  }
+
+  .container .card-nav img.small {
+    width: 40px;
+  }
+
+  .container .card-nav img {
+    width: 60px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .container {
+    flex-direction: column;
+  }
+
+  #up {
+    transform: rotate(-90deg);
+  }
+
+  #down {
+    transform: rotate(90deg);
+  }
+
+  .container .card-nav {
+    order: 1;
+    margin: 0;
+    flex: 1;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container .card-nav img.small {
+    width: 25px;
+  }
+
+  .container .card-nav img {
+    width: 30px;
+  }
+
+  .container .fact {
+    order: 3;
+    flex: 8;
+  }
+
+  .container .image {
+    order: 2;
+    flex: 10;
+  }
+
+  .container .nav {
+    order: 4;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
+  .container .nav li a {
+    border-radius: 10px;
+  }
+
+  .banner {
+    position: absolute;
+    width: 35%;
+    transform: rotate(20deg);
+    left: -7%;
+    bottom: 2%;
+  }
+}

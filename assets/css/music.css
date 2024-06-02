@@ -1,0 +1,323 @@
+.container .content {
+  flex: 10;
+  overflow: scroll;
+}
+
+/* dibawah ini content cssnya */
+
+.header {
+  display: flex;
+}
+
+.header .search-box {
+  background-color: rgb(187, 186, 186);
+  flex: 1;
+  display: flex;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.header .gap {
+  flex: 1;
+}
+
+.header .search-box input {
+  flex: 15;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  color: white;
+  margin: 0 10px;
+}
+
+.header .search-box input:focus {
+  outline: none;
+}
+
+.header .search-box img {
+  width: 30px;
+  height: 30px;
+  flex: 1;
+}
+
+.content .body {
+  padding: 10px;
+}
+
+.content .body h1.title {
+  color: white;
+}
+
+.body-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.body-cards .box {
+  width: 26%;
+  background-color: lightgrey;
+  border-radius: 20px;
+  padding: 10px;
+  float: left;
+  margin: 14px;
+  margin-top: 10px;
+  transition: all 0.5s;
+}
+
+.body-cards .box:hover {
+  cursor: pointer;
+  background-color: grey;
+}
+
+.body-cards .box img {
+  width: 100%;
+  height: 30%;
+  border-radius: 20px;
+}
+
+.player-status {
+  display: none;
+  width: 100%;
+  height: 86px;
+  padding: 14px;
+  background-color: #bf9dc7;
+  bottom: 0;
+  transition: all 1s;
+}
+
+.containing {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  transition: all 1s;
+}
+
+.containing .toggle img {
+  width: 30%;
+  transition: all 1s;
+  transform: rotate(180deg);
+}
+
+.containing .toggle {
+  background: #bf9dc7;
+  text-align: center;
+  z-index: 1;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 8%;
+  position: relative;
+}
+
+.player-status .disc-song {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-image: url("../songs/image/candypop.jfif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: rotating 2s linear infinite;
+  animation-play-state: paused;
+  margin: 0 15px;
+}
+
+.player-status .disc-song .middles {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgb(67, 67, 67);
+}
+
+.player-status .song-title {
+  font-weight: bold;
+}
+
+.player-status .left {
+  flex: 2;
+  display: flex;
+}
+
+.player-status .middle {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+}
+
+.player-status .middle .song-controller img {
+  width: 50px;
+}
+
+.song-controller {
+  display: flex;
+  justify-content: center;
+}
+
+.player-status .middle .song-time-indicator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.song-time-indicator .indicator {
+  flex: 7;
+  background-color: rgba(243, 243, 243, 0.679);
+  height: 20px;
+  border-radius: 20px;
+  margin: 0 15px;
+}
+
+.song-time-indicator .indicator .progress {
+  width: 1%;
+  background-color: rgb(131, 240, 162);
+  height: 20px;
+  border-radius: 20px;
+}
+
+.song-time-indicator p {
+  flex: 1;
+}
+
+#prev {
+  transform: rotate(180deg);
+}
+
+.player-status .right {
+  flex: 2;
+}
+
+#play {
+  margin: 0 20px;
+}
+
+@media screen and (max-width: 910px) {
+  .body-cards .box {
+    width: 40%;
+  }
+
+  .player-status .disc-song {
+    width: 100px;
+    height: 90px;
+  }
+
+  .player-status .right {
+    flex: 0.5;
+  }
+
+  .player-status .left {
+    margin: 0;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .player-status {
+    padding: 12px;
+  }
+}
+
+@media screen and (max-width: 688px) {
+  .body-cards .box {
+    width: 69%;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container .nav li img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .player-status .disc-song {
+    width: 100px;
+    height: 70px;
+  }
+
+  .player-status .right {
+    flex: 0.5;
+  }
+
+  .player-status .left {
+    margin: 0;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .player-status {
+    padding: 12px;
+  }
+
+  .body-cards .box img {
+    width: 100%;
+    height: 45%;
+    border-radius: 20px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .body-cards .box {
+    width: 90%;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .container .nav {
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+
+  .container .nav li a {
+    background-color: black;
+    border-radius: 15%;
+  }
+
+  .container .nav li img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .player-status .disc-song {
+    width: 60px;
+    height: 50px;
+  }
+
+  .player-status .right {
+    flex: 0.5;
+  }
+
+  .player-status .left {
+    margin: 0;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .player-status {
+    padding: 12px;
+  }
+
+  .containing {
+    font-size: 13px;
+  }
+
+  .song-controller img {
+    width: 10px;
+    height: 30px;
+  }
+
+  .body-cards .box img {
+    width: 100%;
+    height: 50%;
+    border-radius: 20px;
+  }
+}

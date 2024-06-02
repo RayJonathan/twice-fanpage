@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twice Fanbase | About Page</title>
+    <link rel="stylesheet" href="assets/css/all-page.css" />
+    <link rel="stylesheet" href="assets/css/about.css" />
+    <link rel="stylesheet" href="assets/css/animation.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/image/icon/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/image/icon/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/image/icon/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/image/icon/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="assets/image/icon/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/data.js"></script>
+  </head>
+  <body>
+    <div class="splash-screen">
+      <img src="assets/image/output-onlinegiftools.gif" alt="" />
+    </div>
+    <img
+      src="assets/image/home/banner.png"
+      alt=""
+      class="banner animation middle-fast zoom"
+    />
+    <div class="background-icon"></div>
+    <div class="container">
+      <div class="content">
+        <h1 class="header">Contributtors</h1>
+        <div class="body">
+          <div class="box">
+            <img src="assets/image/profile/ray.jpg" alt="Ray Jonathan" />
+            <h2>Ray Jonathan</h2>
+            <h3>Contributing:</h3>
+            <ul>
+              <li>Coloring page</li>
+              <li>Make History Page</li>
+              <li>Font Selector</li>
+              <li>Assets Maker</li>
+            </ul>
+          </div>
+          <div class="box">
+            <img
+              src="assets/image/profile/nathan.jpg"
+              alt="Nathanael Valentino Davis"
+            />
+            <h2>Nathanael Valentino Davis</h2>
+            <h3>Contributing:</h3>
+            <ul>
+              <li>Templating Page</li>
+              <li>Make Member Page</li>
+              <li>Add Javascript On Animation</li>
+              <li>CSS Animation</li>
+            </ul>
+          </div>
+          <div class="box">
+            <img src="assets/image/profile/shandy.jpg" alt="Shandy Christian" />
+            <h2>Shandy Christian</h2>
+            <h3>Contributing:</h3>
+            <ul>
+              <li>Make Music Layout Page</li>
+              <li>Add Javascript Music</li>
+            </ul>
+          </div>
+          <div class="box">
+            <img src="assets/image/profile/bryan.jpg" alt="Bryan Imanuel" />
+            <h2>Bryan Imanuel</h2>
+            <h3>Contributing:</h3>
+            <ul>
+              <li>Make Forum Page</li>
+              <li>Make Inner Forum Page</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="nav">
+        <li>
+          <a href="./member.html">
+            <img src="assets/image/icon/home.png" alt="" />
+          </a>
+        </li>
+        <li>
+          <a href="./music.html">
+            <img src="assets/image/icon/music-player.png" alt=""
+          /></a>
+        </li>
+        <li>
+          <a href="./forum.html">
+            <img src="assets/image/icon/forum.png" alt="" />
+          </a>
+        </li>
+        <li>
+          <a href="./history.html">
+            <img src="assets/image/icon/history.png" alt="History Icon" />
+          </a>
+        </li>
+        <li>
+          <a href="#" class="active">
+            <img src="assets/image/icon/about.png" alt="" />
+          </a>
+        </li>
+      </div>
+    </div>
+
+    <script src="assets/js/all-page.js"></script>
+    <script>
+      $(document).ready(function () {
+        setTimeout(function () {
+          $(".splash-screen").fadeToggle();
+          initBackgroundIcon();
+          initAnimationIconBack();
+          setWidthContainer();
+        }, 3000);
+      });
+    </script>
+  </body>
+</html>
